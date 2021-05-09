@@ -1,0 +1,51 @@
+.user-portal-main-container {
+    margin: 0.5rem 5vw;
+    padding: 1rem;
+    vertical-align: top;
+    position: relative;
+    height: auto;
+     /* right:0px;
+     top:0px; */
+    /* background-color: cadetblue; */
+}
+
+.user-portal-menu-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: red; */
+    /* align-items: center; */
+    margin-top: 2.5vh;
+    
+}
+
+.user-portal-menu-bar-left {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle-blur2 {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    top: 200px;
+    left: -30px;
+
+    background: conic-gradient(from 186.12deg at 55.36% 50%, #FF9900 -129.37deg, #1400FF 114.38deg, #FF9900 230.62deg, #1400FF 474.37deg);
+    opacity: 0.8;
+    filter: blur(50px);
+}
+
+.user-portal-glass {
+    background: linear-gradient(72.66deg, rgba(255, 255, 255, 0.8) 16.76%, rgba(255, 255, 255, 0.4) 54.59%);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    backdrop-filter: blur(100px);
+    border-radius: 50px;
+    margin: 1rem 0;
+    height: auto;
+    box-shadow: 0px 10px 30px 5px #D0D0D0;
+  }
