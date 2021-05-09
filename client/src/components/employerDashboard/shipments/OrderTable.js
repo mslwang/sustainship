@@ -1,10 +1,8 @@
 import './Table.css';
 
 import React, { useState } from 'react';
-import Button from '@material-ui/core/Button';
 
 import OrderTableTemplate from './OrderTableTemplate'
-// import ReactTable from "react-table";
 
 
 function OrderTable({data}) {
