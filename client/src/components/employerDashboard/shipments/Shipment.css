@@ -2,15 +2,8 @@
     padding: 5vw; 
     display: flex;
     flex-direction: column;  
-    /* align-items: center; */
     justify-content: center;
 }
-
-/* .shipment-text {
-    background: blue;
-    align-items: left;
-    justify-content: left;
-} */
 
 .shipment-title {
     width: 40vw;

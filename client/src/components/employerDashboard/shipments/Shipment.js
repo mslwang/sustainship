@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import Popup from "./Popup";
 import axios from "axios";
 import MapContainer from "./MapContainer.js";
-import { Transition } from 'react-transition-group';
 
 import orderFulfilledImage from "../../../images/order_fulfilled.svg";
 import deliveryCalculatedImage from "../../../images/delivery_calculated.svg";
