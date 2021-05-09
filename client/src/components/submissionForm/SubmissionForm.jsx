@@ -57,12 +57,6 @@ export default function Submission(props) {
 
     const validate = (fieldValues = values) => {
         let temp = { ...errors }
-        // if ('name' in fieldValues)
-        //     temp.name = fieldValues.name ? "" : "This field is required."
-        // if ('address' in fieldValues)
-        //     temp.address = fieldValues.address ? "" : "This field is required."
-        // if ('postalCode' in fieldValues)
-        //     temp.postalCode = fieldValues.postalCode ? "" : "This field is required."
         setErrors({
             ...temp
         })
@@ -132,27 +126,6 @@ export default function Submission(props) {
         <Form onSubmit={handleSubmit} className={classes.form}>
                 <Box display="flex" flexDirection="column" justifyContent="space-around" alignItems="center">
                 <Box  display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-                    {/* <Input
-                        label="Name"
-                        name="name"
-                        value={values.name}
-                        onChange={handleInputChange}
-                        error={errors.name}
-                    />
-                    <Input
-                    label="Address"
-                    name="address"
-                    value={values.address}
-                    onChange={handleInputChange}
-                    error={errors.address}
-                    />
-                <Input
-                    label="Postal Code"
-                    name="postalCode"
-                    value={values.postalCode}
-                    onChange={handleInputChange}
-                    error={errors.postalCode}
-                /> */}
 
                     <label>Furthest Date</label>              
                <input 
@@ -168,17 +141,6 @@ export default function Submission(props) {
                
                />  
                </Box>
-                                   {/* <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                    <KeyboardDatePicker
-                        disableToolbar
-                        variant="inline"
-                        inputVariant="outlined"
-                        format="MM/dd/yyyy"
-                        margin="normal"
-                        name="furthestDate"
-
-                        />
-                     </MuiPickersUtilsProvider> */}
                      <Card variant="standard" style={{backgroundColor: "rgba(0, 0, 0, 0)"}}className={classes.card}>                    
                          <CardContent>
                             <Box display="flex" container flexDirection="row" justifyContent="space-around" alignItems="center"> 
