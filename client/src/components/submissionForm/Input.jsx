@@ -1,17 +1,27 @@
 import React from 'react'
-import { TextField } from '@material-ui/core';
+import classnames from "classnames";
 
 export default function Input(props) {
 
     const { name, label, value, error="", onChange } = props;
     return (
-        <TextField
-            variant="outlined"
-            label={label}
-            name={name}
-            value={value}
-            onChange={onChange}
-            {...(error !== "" && {error:true, helperText:error})}
-        />
-    )
+        <div className="input-field col s12">
+                <input
+                  name={name}
+                  value={value}
+                  id={name}
+                  onChange={onChange}
+                  error ={error !== ""}
+                  className={classnames("", {
+                        invalid: error 
+                  })}
+                  type="text"
+                />
+                <label>{label}</label>
+                <span className="red-text">
+                  {error}
+                </span>
+        </div>
+
+    );
 }
