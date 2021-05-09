@@ -5,6 +5,7 @@ export function useForm(initialFormValues, validateOnChange = false, setErrors, 
 
     const handleInputChange = e => {
         const { name, value } = e.target;
+        console.log(value);
         setValues({
             ...values,
             [name]: value
@@ -31,7 +32,7 @@ export function useForm(initialFormValues, validateOnChange = false, setErrors, 
 const useStyles = makeStyles(theme => ({
     root: {
         '& .MuiFormControl-root': {
-            width: '80%',
+            width: '100%',
             margin: theme.spacing(1)
         }
     }
