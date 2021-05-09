@@ -13,7 +13,7 @@ function Dashboard(props) {
       <div className="dashboard-headers">
         <h2 style={{marginLeft: "40px", marginTop:"5rem"}}>Hello {props.user.name.split(" ")[0]},</h2>
         <h1 style={{marginLeft: "40px"}} className="dashboard-title">Your Dashboard</h1>
-        <h5 style={{marginLeft: "40px", marginTop: "3rem", fontFamily: "Century-Gothic", fontSize: "20px"}}>With order coupling, we've managed to save <b>1234.21 kg </b> of carbon emissions.</h5>
+        <h5 style={{marginLeft: "40px", marginTop: "3rem", fontFamily: "Century-Gothic", fontSize: "20px"}}>With order coupling, our company has managed to save <b>1234.21 kg </b> of carbon emissions.</h5>
         <div className="stats-container">
           <div className="orders-container">
             <h2>In total, your branch has saved </h2>
