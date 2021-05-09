@@ -1,0 +1,18 @@
+.profile-main-container {
+    padding: 5vw;
+}
+
+.profile-title {
+    width: 30vw;
+    margin: 1rem 0;
+}
+
+.profile-search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-table-names {
+    margin: 5rem 0 1rem 0;
+}
