@@ -1,0 +1,85 @@
+.submission-page-main-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    height: 100vh;
+    justify-content: space-around;
+    
+
+}
+
+.submission-page-images {
+    margin: 1rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.submission-page-image2 {
+    margin-top: 60vh;
+}
+
+.submission-page-image1 img{
+    max-width: 120%;
+}
+
+.submission-page-image2 img{
+    max-width: 120%;
+}
+
+.outer-box{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    /* background-color: pink; */
+}
+.general{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.submission-page-form {
+    /* background-color: white; */
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding:2rem;
+}
+
+.inner-div-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+}
+
+.submission-page-form img {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.submission-page-user-form {
+    margin: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.return-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.return-buttons button{
+    margin: 0 8vw 3vh 8vw;
+}
