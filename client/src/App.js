@@ -1,5 +1,4 @@
 import "./App.css";
-import SubmissionPage from "./pages/SubmissionPage";
 import LandingPage from "./components/LandingPage";
 import LandingPageSmallScreen from "./components/LandingPageSmallScreen";
 import EmployeePortalPage from "./components/employerPortal/EmployeePortalPage";
@@ -59,8 +58,6 @@ function App() {
               <PrivateRoute path="/employee" exact component={EmployeePortalPage} />
               <PrivateRoute path="/user" exact component={UserPortalPage} />
             </Switch>
-            {/* <Route path="/employee/shipments" exact component={Shop}/>
-          <Route path="/employee/shipments/:id" component={ItemDetail}/> */}
           </Switch>
         </div>
       </Router>
