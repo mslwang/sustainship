@@ -1,0 +1,31 @@
+.shipment-main-container {
+    padding: 5vw; 
+    display: flex;
+    flex-direction: column;  
+    /* align-items: center; */
+    justify-content: center;
+}
+
+/* .shipment-text {
+    background: blue;
+    align-items: left;
+    justify-content: left;
+} */
+
+.shipment-title {
+    width: 40vw;
+    align-items: left;
+}
+
+.shipment-general-info {
+    margin: 2rem 0 2rem 5rem;
+}
+
+.shipment-general-info li {
+    padding: 0;
+}
+
+.shipment-main-container Button {
+    margin: 2rem 2rem 2rem 0;
+    align-items: center; 
+}
