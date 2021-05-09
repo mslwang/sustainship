@@ -37,11 +37,10 @@ function Dashboard(props) {
         </div>
 
         <div className="graphs">
-                    <div className="dashboard-donut-graphs">
-                        <Donut />
-                    </div>
-                    {/* <LineChart/> */}
-                </div>
+            <div className="dashboard-donut-graphs">
+                <Donut />
+            </div>
+        </div>
       </div>
     </div>
   );
