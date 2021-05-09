@@ -1,0 +1,84 @@
+.landing-page-small-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    /* min-height: 100%; */
+    /* height: 100vh; */
+    padding: 1rem;
+}
+
+.landing-page-small-glass {
+    background: linear-gradient(72.66deg, rgba(255, 255, 255, 0.8) 16.76%, rgba(255, 255, 255, 0.4) 54.59%);;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    backdrop-filter: blur(100px);
+    border-radius: 30px;
+    margin: 1rem;
+    box-shadow: 0px 10px 30px 5px #D0D0D0;
+  }
+
+  
+.landing-page-small-content {
+    margin: 0 10vw;
+    /* background-color:pink; */
+  }
+  
+  .landing-page-small-sustainship-logo {
+    margin-top: 1rem;
+    /* height: 7vh; */
+    width: auto;
+  }
+  
+  .landing-page-small-image {
+      width: 100%;
+      height: auto;
+  }
+
+  .landing-page-small-main-content {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+  
+  .landing-page-small-text {
+    font-family: Century-Gothic-Bold;
+  }
+  
+  .landing-page-small-incentive {
+    background: -webkit-linear-gradient(#E04A32, #1753E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 10px;
+  }
+  
+  .landing-page-small-implementation {
+    font-family: Century-Gothic;
+    color: #959595;
+    font-size: 10px;
+  }
+
+  
+  .landing-page-small-header {
+    font-size: 35px;
+    line-height: 35px;
+    width: auto;
+    margin-top: 3rem;
+  }
+
+  .landing-page-small-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem;
+    font-size: 10px;
+  }
+  
+  .landing-page-small-employer-portal-button {
+    margin-top: 1rem;
+  }
+  
