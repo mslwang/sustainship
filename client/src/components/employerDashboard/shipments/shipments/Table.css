@@ -1,0 +1,22 @@
+th, td{
+    font-family: Century-Gothic;
+    /* border-radius: 30px; */
+    text-align: center;
+
+}
+
+th{
+    background-color: #dbdbdb;
+    font-family: Century-Gothic-Bold;
+}
+
+tr {
+    border-radius: 30px; 
+}
+
+table {
+    border-collapse: collapse;
+    /* width: 100%; */
+    border-radius: 30px;
+    border: none;
+}
