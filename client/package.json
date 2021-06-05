@@ -16,6 +16,7 @@
     "axios": "^0.21.1",
     "canvasjs-react-charts": "^1.0.5",
     "clsx": "^1.1.1",
+    "concurrently": "^6.2.0",
     "fg-loadcss": "^3.1.0",
     "is-empty": "^1.2.0",
     "jwt-decode": "^3.1.2",
@@ -33,7 +34,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"react-scripts start\" \"cd ../backend && npx nodemon\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
