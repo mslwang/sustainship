@@ -14,9 +14,21 @@ const UserSchema = new Schema({
     type: String,
     required: true
   },
+  address: {
+    type: String,
+    required: true
+  },
+  postalCode: {
+    type: String,
+    required: true
+  },
+  areaCode: {
+    type: String,
+     required: true
+  },  
   date: {
     type: Date,
     default: Date.now
-  }
+  },
 });
 module.exports = User = mongoose.model("User", UserSchema);

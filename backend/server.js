@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -37,7 +39,7 @@ app.use(express.json());
 
 // Configure
 mongoose.connect(
-  "mongodb+s***REMOVED***",
+  process.env.MONGO_URI,
   {
     useNewUrlParser: true,
     useFindAndModify: false,

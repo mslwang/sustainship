@@ -1,13 +1,15 @@
+require('dotenv').config()
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-mongoUri = "mongodb+s***REMOVED***";
+mongoUri = process.env.MONGO_URI;
 
 const validateRegisterInput = require("../validation/register");
 const validateLoginInput = require("../validation/login");
 const User = require("../models/userModel.js");
+const Order = require("../models/orderModel.js");
 
 // @route POST api/users/register
 // @desc Register user
@@ -27,7 +29,10 @@ router.post("/register", (req, res) => {
     const newUser = new User({
       name: req.body.name,
       email: req.body.email,
-      password: req.body.password
+      password: req.body.password,
+      address: req.body.address,
+      postalCode: req.body.postalCode,
+      areaCode: req.body.areaCode
     });
   // Hash password before saving in database
     bcrypt.genSalt(10, (err, salt) => {
@@ -92,6 +97,43 @@ const email = req.body.email;
       }
     });
   });
+});
+
+// @route GET api/users/:id
+// @desc Retrieve user details
+// @access Public
+router.get("/:id", async (request, response) => {
+  const user = await User.findById(request.params.id).exec();
+
+  try {
+    if(request.params.id){
+      const res = {
+        name: user.name,
+        address: user.address,
+        postalCode: user.postalCode,
+        areaCode: user.areaCode
+      };
+      response.send(res);
+    } else {
+      response.status(401);
+    }
+  } catch (error) {
+    response.status(500).send(error);
+  }
+});
+
+router.get("/:id/orders", async (request, response) => {
+  const orders = await Order.find({ buyerId: request.params.id }).exec();
+
+  try {
+    if(request.params.id){
+      response.send(orders);
+    } else {
+      response.status(401);
+    }
+  } catch (error) {
+    response.status(500).send(error);
+  }
 });
 
 router.get("/users/:email", async (request, response) => {
